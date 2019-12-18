@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="theme.css"/>
+		<title>Nous Joindre</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg">
+			<div class="navbar-content container col-lg-11">
+				<div class="navbar-brand col-1"><img src="images/logo.png" alt="logo"></div>
+				<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">	
+						<li class="nav-item active">
+							<a class="nav-link" href="accueil.html">Accueil</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="apropos.html" >À propos</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Menu <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-item"><a href="menu-midi.html">Midi</a></li>
+								<li class="dropdown-item"><a href="menu-soir.html">Soir</a></li>
+								<li class="dropdown-item"><a href="menu-carte.html">Carte des vins</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="photos.html">Photos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="reservations.html">Réserver en ligne</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="nousjoindre.html" style="color:#29C2E4;">Nous joindre</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div id="nousjoindre" class="container col-xl-10 col-md-10 col-12 border">
+			<div class="row">
+				<div id="nousjoindre-left" class="col-xl-6 col-12">
+					<div id="nousjoindre-left-coords" class="container">
+						<div class="row">
+							<div class="ccourriel col-6">
+								<span><b>Aux pates freches</b></span>
+								<br>
+								<span>2827 , chemin Merivale</span>
+								<br>
+								<span>Ottawa (ON) K2H5B6</span>
+								<br>
+							</div>
+							<div class="ctelephone col-6">
+								<span><b>Adresses courriels</b></span>
+								<br>
+								<span><a href="mailto:info@auxpatesfraiches.ca">info@auxpatesfraiches.ca</a></span>
+								<br>
+								<span><a href="mailto:emploi@auxpatesfraiches.ca">emploi@auxpatesfraiches.ca</a></span>
+								<br>
+								<span><a href="mailto:reservation@auxpatesfraiches.ca">reservation@auxpatesfraiches.ca</a></span>
+							</div>
+						</div>
+						<div id="contact-row-2" class="row">
+							<div class="ccourriel col-6">
+								<span><b>Adresses téléphoniques</b></span>
+								<br>
+								<span>613 829-4783</span>
+								<br>
+								<span>1 800 82-PÂTES (72837)</span>
+							</div>
+							<div class="cheure col-6">
+								<h5><b>Heures d'ouverture</b></h5>	
+								<span>Dimanche - Jeudi: <b>10h - 21h</b></span>
+								<br>
+								<span>Vendredi: <b>10h - 22h</b></span>
+								<br>
+								<span>Samedi: <b>10h - 0h</b></span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<form id="nousjoindre-form" class="container col-12">
+							<div class="row">
+								<h4>Nous Contacter</h4>
+								<div class="form-group col-12">
+									<div class="row">
+										<label class="col-2" for="inputnom">Nom</label>
+										<input id="inputnom" class="form-control col-9" type="text">
+									</div>
+								</div>
+								<div class="form-group col-12">
+									<div class="row">
+										<label class="col-2" for="inputcourriel">Courriel</label>
+										<input id="inputcourriel" class="form-control col-9" type="email" placeholder="Adresse@Courriel.com">
+									</div>
+								</div>
+								<div class="form-group col-12">
+									<div class="row">
+										<label class="col-2" for="inputsujet">Sujet</label>
+										<input id="inputsujet" class="form-control col-9" type="text">
+									</div>
+								</div>
+								<div class="form-group col-12">
+									<div class="row">
+										<label class="col-2" for="textareamessage">Message</label>
+										<textarea id="textareamessage" class="form-control col-9" rows="3"></textarea>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="row">
+						<div id="form-button" class="form-group col-12">
+							<button type="submit" class="btn btn-primary col-12">Envoyer</button>
+						</div>
+					</div>
+				</div>
+				<div id="nousjoindre-right" class="map-responsive col-xl-6 col-12">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31797.009694899163!2d-75.69817313916545!3d45.30977871764591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccde2ad209b3bb5%3A0xea00c0232e913a24!2s2827+Merivale+Rd%2C+Nepean%2C+ON+K2C+3H1!5e0!3m2!1sen!2sca!4v1566409642991!5m2!1sen!2sca" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">		
+			<div class="footer-contentbox container col-xl-9 col-12">
+				<div class="row">			
+					<div class="footer-content col-12 col-lg-4 col-md-4">
+						<h3>À propos</h3>				
+						<p>Situé dans un ancien hangar, le restaurant à des allures de cave à vin ancestrale de la région de Toscane, à laquelle s'est
+							ajouté un décor enchanteur et créatif qui séduira les amateurs de bonne bouffe en bonne compagnie.</p>
+					</div>
+					<div class="footer-content col-12 col-lg-4 col-md-4">
+						<h3>Nous joindre</h3>	
+						<div class="row">
+							<p class="col-4"><b>Adresse:</b></p>
+							<p class="coord col-7">2827 , chemin Merivale Ottawa (ON) K2H5B6 </p>
+						</div>
+						<div class="row">
+							<p class="col-4"><b>Téléphone:</b></p>
+							<p class="coord col-7">613 829-4783 </p>
+						</div>
+						<div class="row">
+							<p class="col-4"><b>Courriel:</b></p>
+							<p class="coord col-7">info@auxpatesfraiches.ca </p>
+						</div>
+					</div>
+					<div class="footer-content col-12 col-lg-4 col-md-4">
+						<h3>Médias sociaux</h3>
+						<p>Suivez-nous sur les médias sociaux!</p>
+						<div class="social-medias">
+							<div class="row">
+								<a href="#" class="fa fa-youtube"></a>
+								<a href="#" class="fa fa-facebook"></a>
+								<a href="#" class="fa fa-twitter"></a>
+								<a href="#" class="fa fa-instagram"></a>
+							</div>
+						</div>
+					</div>				
+				</div>
+			</div>				
+			<div id="copyrights" class="col-12">
+				<p>Copyrights 2019</p>
+			</div>
+		</div>
+	</body>
+</html>

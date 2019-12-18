@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>		
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="theme.css"/>
+		<title>Menu - Midi</title>
+		
+		<script>		
+			//Données de chaque item sur le menu
+			$(document).ready(function() {
+				$('#item1container a.option1').click(function() {
+					$('#item1nom').text('Moules à la vénitienne');
+					$('#item1prix').text('14,95$');
+					$('#item1image').attr("src","images/moules.jpg");
+					$('#item1image').attr("alt","option1");
+					$('#item1token').text("14,95$");		
+				});
+				$('#item1container a.option2').click(function() {
+					$('#item1nom').text('Courgettes panées');
+					$('#item1prix').text('8,95$');
+					$('#item1image').attr("src","images/courgettes.jpg");
+					$('#item1image').attr("alt","option2");
+					$('#item1token').text("8,95$");
+				});
+				$('#item1container a.option3').click(function() {
+					$('#item1nom').text('Prosciutto et melon');
+					$('#item1prix').text('11,95$');
+					$('#item1image').attr("src","images/prosciutto.jpg");
+					$('#item1image').attr("alt","option3");
+					$('#item1token').text("11,95$");
+				});
+				$('#item1container a.option4').click(function() {
+					$('#item1nom').text('Bruschetta alla parmigiana');
+					$('#item1prix').text('7,95$');
+					$('#item1image').attr("src","images/bruschetta.jpg");
+					$('#item1image').attr("alt","option4");
+					$('#item1token').text("7,95$");
+				});
+				
+				$('#item2container a.option1').click(function() {
+					$('#item2nom').text('Salade césar');
+					$('#item2prix').text('8,95$');
+					$('#item2image').attr("src","images/saladecesar.jpg");
+					$('#item2image').attr("alt","option1");
+					$('#item2token').text("8,95$");	
+				});
+				$('#item2container a.option2').click(function() {
+					$('#item2nom').text('Salade césar au poulet');
+					$('#item2prix').text('14,95$');
+					$('#item2image').attr("src","images/saladecesar.jpg");
+					$('#item2image').attr("alt","option2");
+					$('#item2token').text("14,95$");
+				});
+				$('#item2container a.option3').click(function() {
+					$('#item2nom').text('Salade au fromage de chèvre et noix grillées');
+					$('#item2prix').text('16,95$');
+					$('#item2image').attr("src","images/nondisp.jpg");
+					$('#item2image').attr("alt","option3");
+					$('#item2token').text("16,95$");
+				});
+				$('#item2container a.option4').click(function() {
+					$('#item2nom').text('Salade aux fruits de mer');
+					$('#item2prix').text('21,95$');
+					$('#item2image').attr("src","images/salademer.jpg");
+					$('#item2image').attr("alt","option4");
+					$('#item2token').text("21,95$");
+				});
+				
+				$('#item3container a.option1').click(function() {
+					$('#item3nom').text('Minestrone');
+					$('#item3prix').text('7,50$');
+					$('#item3image').attr("src","images/minestrone.jpg");
+					$('#item3image').attr("alt","option1");
+					$('#item3token').text("7,50$");
+				});
+				$('#item3container a.option2').click(function() {
+					$('#item3nom').text('Soupe du jour');
+					$('#item3prix').text('5,00$');
+					$('#item3image').attr("src","images/nondisp.jpg");
+					$('#item3image').attr("alt","option2");
+					$('#item3token').text("5,00$");
+				});
+				
+				$('#item4container a.option1').click(function() {
+					$('#item4nom').text('Ravioli au homard');
+					$('#item4prix').text('21,95$');
+					$('#item4image').attr("src","images/ravioli.jpg");
+					$('#item4image').attr("alt","option1");
+					$('#item4token').text("21,95$");
+				});
+				$('#item4container a.option2').click(function() {
+					$('#item4nom').text('Linguini aux palourdes');
+					$('#item4prix').text('17,95$');
+					$('#item4image').attr("src","images/linguini.jpg");
+					$('#item4image').attr("alt","option2");
+					$('#item4token').text("17,95$");
+				});
+				$('#item4container a.option3').click(function() {
+					$('#item4nom').text('Cannelloni au four');
+					$('#item4prix').text('17,95$');
+					$('#item4image').attr("src","images/nondisp.jpg");
+					$('#item4image').attr("alt","option3");
+					$('#item4token').text("17,95$");
+				});
+				$('#item4container a.option4').click(function() {
+					$('#item4nom').text('Spaghetti Giuseppe');
+					$('#item4prix').text('18.95$');
+					$('#item4image').attr("src","images/spaghetti.jpg");
+					$('#item4image').attr("alt","option4");
+					$('#item4token').text("18,95$");
+				});
+				
+				$('#item5container a.option1').click(function() {
+					$('#item5nom').text('Gnocchi aux tomates et basilic');
+					$('#item5prix').text('18,95$');
+					$('#item5image').attr("src","images/gnocchi.jpg");
+					$('#item5image').attr("alt","option1");
+					$('#item5token').text("18,95$");
+				});
+				$('#item5container a.option2').click(function() {
+					$('#item5nom').text('Fettucine Alfredo');
+					$('#item5prix').text('17,95$');
+					$('#item5image').attr("src","images/fettucine.jpg");
+					$('#item5image').attr("alt","option2");
+					$('#item5token').text("17,95$");
+				});
+				$('#item5container a.option3').click(function() {
+					$('#item5nom').text('Farfalle avec légumes grillés');
+					$('#item5prix').text('18,95$');
+					$('#item5image').attr("src","images/nondisp.jpg");
+					$('#item5image').attr("alt","option3");
+					$('#item5token').text("18,95$");
+				});
+				$('#item5container a.option4').click(function() {
+					$('#item5nom').text('Penne primavera');
+					$('#item5prix').text('19,95$');
+					$('#item5image').attr("src","images/nondisp.jpg");
+					$('#item5image').attr("alt","option4");
+					$('#item5token').text("19,95$");
+				});
+				
+				$('#item6container a.option1').click(function() {
+					$('#item6nom').text('Saumon de l’atlantique');
+					$('#item6prix').text('21,95$');
+					$('#item6image').attr("src","images/saumon.jpg");
+					$('#item6image').attr("alt","option1");
+					$('#item6token').text("21,95$");
+				});
+				$('#item6container a.option2').click(function() {
+					$('#item6nom').text('Côtelette de veau');
+					$('#item6prix').text('24,95$');
+					$('#item6image').attr("src","images/veau.jpg");
+					$('#item6image').attr("alt","option2");
+					$('#item6token').text("24,95$");
+				});
+				$('#item6container a.option3').click(function() {
+					$('#item6nom').text('Poulet parmigiana');
+					$('#item6prix').text('19,95$');
+					$('#item6image').attr("src","images/parmigiana.jpg");
+					$('#item6image').attr("alt","option3");
+					$('#item6token').text("19,95$");
+				});
+				
+				$('#item7container a.option1').click(function() {
+					$('#item7nom').text('Piemonte');
+					$('#item7prix').text('20,95$');
+					$('#item7image').attr("src","images/galleryimg2.jpg");
+					$('#item7image').attr("alt","option1");
+					$('#item7token').text("20,95$");
+				});
+				$('#item7container a.option2').click(function() {
+					$('#item7nom').text('Montanara');
+					$('#item7prix').text('17,95$');
+					$('#item7image').attr("src","images/galleryimg2.jpg");
+					$('#item7image').attr("alt","option2");
+					$('#item7prix').text('17,95$');
+				});
+				$('#item7container a.option3').click(function() {
+					$('#item7nom').text('Margherita');
+					$('#item7prix').text('15,95$');
+					$('#item7image').attr("src","images/galleryimg2.jpg");
+					$('#item7image').attr("alt","option3");
+					$('#item7prix').text('15,95$');
+				});
+				$('#item7container a.option4').click(function() {
+					$('#item7nom').text('Formaggi');
+					$('#item7prix').text('19,95$');
+					$('#item7image').attr("src","images/galleryimg2.jpg");
+					$('#item7image').attr("alt","option4");
+					$('#item7prix').text('19,95$');
+				});
+				$('#item7container a.option5').click(function() {
+					$('#item7nom').text('Cacciatore');
+					$('#item7prix').text('19,95$');
+					$('#item7image').attr("src","images/galleryimg2.jpg");
+					$('#item7image').attr("alt","option5");
+					$('#item7prix').text('19,95$');
+				});
+				
+				$('#item8container a.option1').click(function() {
+					$('#item8nom').text('Sorbet à la mangue et aux framboises');
+					$('#item8prix').text('8,49$');
+					$('#item8image').attr("src","images/sorbet.jpg");
+					$('#item8image').attr("alt","option1");
+					$('#item8prix').text('8,95$');
+				});
+				$('#item8container a.option2').click(function() {
+					$('#item8nom').text('Sorbet au citron');
+					$('#item8prix').text('7,95$');
+					$('#item8image').attr("src","images/nondisp.jpg");
+					$('#item8image').attr("alt","option2");
+					$('#item8prix').text('7,95$');
+				});
+				$('#item8container a.option3').click(function() {
+					$('#item8nom').text('Crème caramel');
+					$('#item8prix').text('7,95$');
+					$('#item8image').attr("src","images/caramel.jpg");
+					$('#item8image').attr("alt","option3");
+					$('#item8prix').text('7,95$');
+				});
+				$('#item8container a.option4').click(function() {
+					$('#item8nom').text('Tiramisu');
+					$('#item8prix').text('7,95$');
+					$('#item8image').attr("src","images/tiramisu.jpg");
+					$('#item8image').attr("alt","option4");
+					$('#item8prix').text('7,95$');
+				});
+				$('#item8container a.option5').click(function() {
+					$('#item8nom').text('Crème glacée à la vanille');
+					$('#item8prix').text('3,95$');
+					$('#item8image').attr("src","images/cremeglace.jpg");
+					$('#item8image').attr("alt","option5");
+					$('#item8prix').text('3,95$');
+				});
+				
+				//Menu 'dropdown' se ferme si cliqué a l'exterieur
+				$(".btn").click(function (){
+					$("img").show()
+					if ($(this).attr('aria-expanded') === "false" ){
+						$(this).parent().parent().parent().find('img').hide();
+					}
+					
+					let self = this
+					$("body").unbind("click")
+					$("body").click(function (){
+						if ($(self).attr('aria-expanded') === "true" ){
+							$('img').show();
+						}
+					});
+				});
+
+				//La boite ou le jeton est déposé additionne le prix de chacun.
+				$('.token').draggable();
+				$('#chosen-container').droppable({
+					drop: function(ev, ui) {
+						var prix = ui.draggable[0].textContent;
+						var priceFloat = parseFloat(prix.replace('$', '').replace(',', '.').trim());
+						var chosenElement = document.getElementById("chosen-price")
+						var chosenFloat = parseFloat(chosenElement.textContent.replace('$', '').replace(',', '.').trim());
+						var result = chosenFloat + priceFloat;
+						chosenElement.textContent = result.toFixed(2).toString().replace('.', ',') + '$';
+					}
+				});
+				
+				//Le jeton
+				$("body").droppable({
+					drop: function reset() {
+						$(".token").animate({
+							top: "0px",
+							left: "0px"
+						});
+					}
+				});
+
+				$("button").focus(function () {
+					$(this).removeClass("ui-state-focus");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg">
+			<div class="navbar-content container col-lg-11">
+				<div class="navbar-brand col-1"><img src="images/logo.png" alt="logo"/></div>
+				<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">	
+						<li class="nav-item active">
+							<a class="nav-link" href="accueil.html">Accueil</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="apropos.html" >À propos</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" style="color:#29C2E4;">Menu <span class="caret" ></span></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-item"><a href="menu-midi.html" style="color:#29C2E4;">Midi</a></li>
+								<li class="dropdown-item"><a href="menu-soir.html">Soir</a></li>
+								<li class="dropdown-item"><a href="menu-carte.html">Carte des vins</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="photos.html">Photos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="reservations.html">Réserver en ligne</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="nousjoindre.html">Nous joindre</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="menu-midi container-fluid p-5">
+			<div class="row">
+				<div id="item1container" class="menu-item container col-sm-12 col-md-6 col-xl-4">
+					<div class="borderbox border rounded">
+						<div class="row">
+							<img id="item1image" class="col-6" src="images/moules.jpg" alt="option1"/>
+							<div class="item-info col-6">
+								<div class="dropdown">
+									<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Entrées
+									</button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item option1" href="#">Moules à la vénitienne</a>
+										<a class="dropdown-item option2" href="#">Courgettes panées</a>
+										<a class="dropdown-item option3" href="#">Prosciutto et melon</a>
+										<a class="dropdown-item option4" href="#">Bruschetta alla parmigiana</a>
+									</div>
+								</div>
+								<h3 id="item1nom" class="nom-item">Moules à la vénitienne</h3>
+								<h1 id="item1prix" class="prix-item">14,95$</h1>
+								<div class="token">
+									<p id="item1token" class="tokentext">14,95$</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item2container" class="menu-item container col-sm-12 col-md-6 col-xl-4">
+					<div class="borderbox border rounded">
+						<div class="row">
+							<img id="item2image" class="col-6" src="images/saladecesar.jpg" alt="option2"/>
+							<div class="item-info col-6">
+								<div class="dropdown">
+									<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Salades
+									</button>
+									<div id="dropdown-salade" class="dropdown-menu">
+										<a class="dropdown-item option1" href="#">Salade césar</a>
+										<a class="dropdown-item option2" href="#">Salade césar au poulet</a>
+										<a class="dropdown-item option3" href="#">Salade au fromage de chèvre et noix grillées</a>
+										<a class="dropdown-item option4" href="#">Salade aux fruits de mer</a>
+									</div>
+								</div>
+								<h3 id="item2nom" class="nom-item">Salade césar</h3>
+								<h1 id="item2prix" class="prix-item">8,95$</h1>
+								<div class="token">
+									<p id="item2token" class="tokentext">8,95$</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item3container" class="menu-item container col-sm-12 col-md-6 col-xl-4">
+					<div class="borderbox border rounded">
+						<div class="row">
+							<img id="item3image" class="col-6" src="images/minestrone.jpg" alt="option3"/>
+							<div class="item-info col-6">
+								<div class="dropdown">
+									<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Soupes
+									</button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item option1" href="#">Minestrone</a>
+										<a class="dropdown-item option2" href="#">Soupe du jour</a>
+									</div>
+								</div>
+								<h3 id="item3nom" class="nom-item">Minestrone</h3>
+								<h1 id="item3prix" class="prix-item">7,50$</h1>
+								<div class="token">
+									<p id="item3token" class="tokentext">7,50$</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item4container" class="menu-item container col-sm-12 col-md-6 col-xl-4">
+					<div class="borderbox border rounded">
+						<div class="row">
+							<img id="item4image" class="col-6" src="images/ravioli.jpg" alt="option4"/>
+							<div class="item-info col-6">
+								<div class="dropdown">
+									<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Pâtes
+									</button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item option1" href="#">Ravioli au homard</a>
+										<a class="dropdown-item option2" href="#">Linguini aux palourdes</a>
+										<a class="dropdown-item option3" href="#">Cannelloni au four</a>
+										<a class="dropdown-item option4" href="#">Spaghetti Giuseppe</a>
+									</div>
+								</div>
+								<h3 id="item4nom" class="nom-item">Ravioli au homard</h3>
+								<h1 id="item4prix" class="prix-item">21,95$</h1>
+								<div class="token">
+									<p id="item4token" class="tokentext">21,95$</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item5container" class="menu-item container col-sm-12 col-md-6 col-xl-4">
+					<div class="borderbox border rounded">
+						<div class="row">
+							<img id="item5image" class="col-6" src="images/gnocchi.jpg" alt="option5"/>
+							<div class="item-info col-6">
+								<div class="dropdown">
+									<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Végétarien
+									</button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item option1" href="#">Gnocchi aux tomates et basilic</a>
+										<a class="dropdown-item option2" href="#">Fettucine Alfredo</a>
+										<a class="dropdown-item option3" href="#">Farfalle avec légumes grillés</a>
+										<a class="dropdown-item option4" href="#">Penne primavera</a>
+									</div>
+								</div>
+								<h3 id="item5nom" class="nom-item">Gnocchi aux tomates et basilic</h3>
+								<h1 id="item5prix" class="prix-item">18,95$</h1>
+								<div class="token">
+									<p id="item5token" class="tokentext">18,95$</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item6container" class="menu-item container col-sm-12 col-md-6 col-xl-4">
+					<div class="borderbox border rounded">
+						<div class="row">
+							<img id="item6image" class="col-6" src="images/saumon.jpg" alt="option6"/>
+							<div class="item-info col-6">
+								<div class="dropdown">
+									<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Suggestions du chef
+									</button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item option1" href="#">Saumon de l’atlantique</a>
+										<a class="dropdown-item option2" href="#">Côtelette de veau</a>
+										<a class="dropdown-item option3" href="#">Poulet parmigiana</a>
+									</div>
+								</div>
+								<h3 id="item6nom" class="nom-item">Saumon de l’atlantique</h3>
+								<h1 id="item6prix" class="prix-item">21,95$</h1>
+								<div class="token">
+									<p id="item6token" class="tokentext">21,95$</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div id="item7container" class="menu-item container col-sm-12 col-md-6 col-xl-4">
+					<div class="borderbox border rounded">
+						<div class="row">
+							<img id="item7image" class="col-6" src="images/galleryimg2.jpg" alt="option7"/>
+							<div class="item-info col-6">
+								<div class="dropdown">
+									<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Pizza
+									</button>
+									<div class="dropdown-menu">
+										<a class="dropdown-item option1" href="#">Piemonte</a>
+										<a class="dropdown-item option2" href="#">Montanara</a>
+										<a class="dropdown-item option3" href="#">Margherita</a>
+										<a class="dropdown-item option4" href="#">Formaggi</a>
+										<a class="dropdown-item option5" href="#">Cacciatore</a>
+									</div>
+								</div>
+								<h3 id="item7nom" class="nom-item">Piemonte</h3>
+								<h1 id="item7prix" class="prix-item">20,95$</h1>
+								<div class="token">
+									<p id="item7token" class="tokentext">20,95$</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item8container" class="menu-item container col-sm-12 col-md-6 col-xl-4">
+					<div class="borderbox border rounded">
+						<div class="row">
+							<img id="item8image" class="col-6" src="images/sorbet.jpg" alt="option8"/>
+							<div class="item-info col-6">
+								<div class="dropdown">
+									<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Desserts
+									</button>
+									<div id="dropdown-dessert" class="dropdown-menu">
+										<a class="dropdown-item option1" href="#">Sorbet à la mangue et aux framboises</a>
+										<a class="dropdown-item option2" href="#">Sorbet au citron</a>
+										<a class="dropdown-item option3" href="#">Crème caramel</a>
+										<a class="dropdown-item option4" href="#">Tiramisu</a>
+										<a class="dropdown-item option5" href="#">Crème glacée à la vanille</a>
+									</div>
+								</div>
+								<h3 id="item8nom" class="nom-item">Sorbet à la mangue et aux framboises</h3>
+								<h1 id="item8prix" class="prix-item">8,49$</h1>
+								<div class="token">
+									<p id="item8token" class="tokentext">8,49$</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="chosen-info">
+			<div id="chosen-container">
+				
+			</div>
+			<div id="chosen-price">
+				0,00$
+			</div>
+		</div>
+		<div id="footer">		
+			<div class="footer-contentbox container col-xl-9 col-12">
+				<div class="row">			
+					<div class="footer-content col-12 col-lg-4 col-md-4">
+						<h3>À propos</h3>				
+						<p>Situé dans un ancien hangar, le restaurant à des allures de cave à vin ancestrale de la région de Toscane, à laquelle s'est
+							ajouté un décor enchanteur et créatif qui séduira les amateurs de bonne bouffe en bonne compagnie.</p>
+					</div>
+					<div class="footer-content col-12 col-lg-4 col-md-4">
+						<h3>Nous joindre</h3>	
+						<div class="row">
+							<p class="col-4"><b>Adresse:</b></p>
+							<p class="coord col-7">2827 , chemin Merivale Ottawa (ON) K2H5B6 </p>
+						</div>
+						<div class="row">
+							<p class="col-4"><b>Téléphone:</b></p>
+							<p class="coord col-7">613 829-4783 </p>
+						</div>
+						<div class="row">
+							<p class="col-4"><b>Courriel:</b></p>
+							<p class="coord col-7">info@auxpatesfraiches.ca </p>
+						</div>
+					</div>
+					<div class="footer-content col-12 col-lg-4 col-md-4">
+						<h3>Médias sociaux</h3>
+						<p>Suivez-nous sur les médias sociaux!</p>
+						<div class="social-medias">
+							<div class="row">
+								<a href="#" class="fa fa-youtube"></a>
+								<a href="#" class="fa fa-facebook"></a>
+								<a href="#" class="fa fa-twitter"></a>
+								<a href="#" class="fa fa-instagram"></a>
+							</div>
+						</div>
+					</div>				
+				</div>
+			</div>				
+			<div id="copyrights" class="col-12">
+				<p>Copyrights 2019</p>
+			</div>
+		</div>
+	</body>
+</html>

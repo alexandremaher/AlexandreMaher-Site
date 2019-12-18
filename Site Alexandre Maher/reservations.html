@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="theme.css"/>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<title>Réservations</title>
+		<script>
+
+			//Slider du nombre de personnes pour le formulaire
+			$(document).ready(function() {
+				$('#formslider').slider({
+					change: function(event, ui) {
+						$('.formvalue').val(ui.value);
+					},
+					max: 8,
+					min: 1
+				});
+
+				$('#inputdate').datepicker();
+
+				$('.form-icon img').tooltip();
+				
+			});
+		</script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg">
+			<div class="navbar-content container col-lg-11">
+				<div class="navbar-brand col-1"><img src="images/logo.png" alt="logo"></div>
+				<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">	
+						<li class="nav-item active">
+							<a class="nav-link" href="accueil.html">Accueil</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="apropos.html" >À propos</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Menu <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-item"><a href="menu-midi.html">Midi</a></li>
+								<li class="dropdown-item"><a href="menu-soir.html">Soir</a></li>
+								<li class="dropdown-item"><a href="menu-carte.html">Carte des vins</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="photos.html">Photos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="reservations.html" style="color:#29C2E4;">Réserver en ligne</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="nousjoindre.html">Nous joindre</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<form id="form-reservations" class="container col-xl-3 col-lg-5 col-md-6 col-sm-8 col-10 border" action="verification.php" method="post">
+			<div class="row">
+				<div id="form-text" class="col-12">
+					<h3>Réserver une place en ligne</h3>
+				</div>
+				<div class="form-group container col-12">
+					<div class="row">
+						<div class="form-icon col-2 offset-1">
+							<img src="svg/calendar.svg" alt="calendar" title="Date">
+						</div>
+						<input id="inputdate" class="form-control col-7" type="datebs" name="date">
+					</div>
+				</div>
+				<div class="form-group container col-12">
+					<div class="row">
+						<div class="form-icon col-2 offset-1">
+							<img src="svg/time.svg" alt="time" title="Heure">
+						</div>
+						<select id="inputheure" class="form-control col-7" type="enum" name="heure">
+							<option selected disabled>Heure</option>
+							<option value="10">10:00h</option>
+							<option value="11">11:00h</option>
+							<option value="12">12:00h</option>
+							<option value="13">13:00h</option>
+							<option value="14">14:00h</option>
+							<option value="15">15:00h</option>
+							<option value="16">16:00h</option>
+							<option value="17">17:00h</option>
+							<option value="18">18:00h</option>
+							<option value="19">19:00h</option>
+							<option value="20">20:00h</option>
+							<option value="21">21:00h</option>
+							<option value="22">22:00h</option>
+							<option value="23">23:00h</option>
+						</select>
+					</div>		
+				</div>
+				<div class="form-group container col-12">
+					<div class="row">
+						<div class="form-icon col-2 offset-1">
+							<img src="svg/person.svg" alt="person" title="Nombre de personnes">
+						</div>
+						<div id="sliderbox">
+							<div id="formslider"></div>
+							<p id="slidervalue"><input class="formvalue" type="tinyint" readonly name="personnes" value="1"/></p>
+						</div>
+					</div>
+				</div>
+			
+				<div class="form-group container col-12">
+					<div class="row">
+						<div class="form-icon col-2 offset-1">
+							<img src="svg/email.svg" alt="email" title="Adresse courriel">
+						</div>
+						<input id="inputcourriel" class="form-control col-7" placeholder="Adresse@Courriel.com" type="varchar" name="courriel">
+					</div>
+				</div>
+				<div id="form-button" class="form-group col-12 offset-1">
+					<button type="submit" class="btn btn-primary col-9">Réserver</button>
+				</div>
+			</div>
+		</form>
+		
+		<img class="logoimg" src="images/logo.png" alt="logo">
+
+		<div id="footer">		
+			<div class="footer-contentbox container col-xl-9 col-12">
+				<div class="row">			
+					<div class="footer-content col-12 col-lg-4 col-md-4">
+						<h3>À propos</h3>				
+						<p>Situé dans un ancien hangar, le restaurant à des allures de cave à vin ancestrale de la région de Toscane, à laquelle s'est
+							ajouté un décor enchanteur et créatif qui séduira les amateurs de bonne bouffe en bonne compagnie.</p>
+					</div>
+					<div class="footer-content col-12 col-lg-4 col-md-4">
+						<h3>Nous joindre</h3>	
+						<div class="row">
+							<p class="col-4"><b>Adresse:</b></p>
+							<p class="coord col-7">2827 , chemin Merivale Ottawa (ON) K2H5B6 </p>
+						</div>
+						<div class="row">
+							<p class="col-4"><b>Téléphone:</b></p>
+							<p class="coord col-7">613 829-4783 </p>
+						</div>
+						<div class="row">
+							<p class="col-4"><b>Courriel:</b></p>
+							<p class="coord col-7">info@auxpatesfraiches.ca </p>
+						</div>
+					</div>
+					<div class="footer-content col-12 col-lg-4 col-md-4">
+						<h3>Médias sociaux</h3>
+						<p>Suivez-nous sur les médias sociaux!</p>
+						<div class="social-medias">
+							<div class="row">
+								<a href="#" class="fa fa-youtube"></a>
+								<a href="#" class="fa fa-facebook"></a>
+								<a href="#" class="fa fa-twitter"></a>
+								<a href="#" class="fa fa-instagram"></a>
+							</div>
+						</div>
+					</div>				
+				</div>
+			</div>				
+			<div id="copyrights" class="col-12">
+				<p>Copyrights 2019</p>
+			</div>
+		</div>
+	</body>
+</html>
